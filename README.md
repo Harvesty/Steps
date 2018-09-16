@@ -2,6 +2,34 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
+## Set up project
+
+```
+git clone git@github.com:Harvesty/Steps.git
+
+ng new steps
+
+cd .\Steps\
+
+npm i angular-cli-ghpages --save-dev
+```
+
+## Change the base in `index.html`
+
+In the line `<base href="/">` , change to `<base href="https://harvesty.github.io/Steps/">`.
+
+## Build
+
+```
+ng build --prod"
+```
+
+## Deploy
+
+```
+npx ngh --dir dist/steps --repo=git@github.com:Harvesty/Steps.git
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
